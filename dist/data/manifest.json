@@ -1,0 +1,138 @@
+{
+  "version": "2026.10.21",
+  "total": 2400,
+  "chapters": [
+    {
+      "id": "01",
+      "title": "第一章 法律基本原理",
+      "count": 200,
+      "file": "chapter-01.json",
+      "types": {
+        "single": 120,
+        "multiple": 60,
+        "case": 20
+      }
+    },
+    {
+      "id": "02",
+      "title": "第二章 基本民事法律制度",
+      "count": 200,
+      "file": "chapter-02.json",
+      "types": {
+        "single": 120,
+        "multiple": 60,
+        "case": 20
+      }
+    },
+    {
+      "id": "03",
+      "title": "第三章 物权法律制度",
+      "count": 200,
+      "file": "chapter-03.json",
+      "types": {
+        "single": 120,
+        "multiple": 60,
+        "case": 20
+      }
+    },
+    {
+      "id": "04",
+      "title": "第四章 合同法律制度",
+      "count": 200,
+      "file": "chapter-04.json",
+      "types": {
+        "single": 120,
+        "multiple": 60,
+        "case": 20
+      }
+    },
+    {
+      "id": "05",
+      "title": "第五章 合伙企业法律制度",
+      "count": 200,
+      "file": "chapter-05.json",
+      "types": {
+        "single": 120,
+        "multiple": 60,
+        "case": 20
+      }
+    },
+    {
+      "id": "06",
+      "title": "第六章 公司法律制度",
+      "count": 200,
+      "file": "chapter-06.json",
+      "types": {
+        "single": 120,
+        "multiple": 60,
+        "case": 20
+      }
+    },
+    {
+      "id": "07",
+      "title": "第七章 证券法律制度",
+      "count": 200,
+      "file": "chapter-07.json",
+      "types": {
+        "single": 120,
+        "multiple": 60,
+        "case": 20
+      }
+    },
+    {
+      "id": "08",
+      "title": "第八章 企业破产法律制度",
+      "count": 200,
+      "file": "chapter-08.json",
+      "types": {
+        "single": 120,
+        "multiple": 60,
+        "case": 20
+      }
+    },
+    {
+      "id": "09",
+      "title": "第九章 票据与支付结算法律制度",
+      "count": 200,
+      "file": "chapter-09.json",
+      "types": {
+        "single": 120,
+        "multiple": 60,
+        "case": 20
+      }
+    },
+    {
+      "id": "10",
+      "title": "第十章 企业国有资产法律制度",
+      "count": 200,
+      "file": "chapter-10.json",
+      "types": {
+        "single": 120,
+        "multiple": 60,
+        "case": 20
+      }
+    },
+    {
+      "id": "11",
+      "title": "第十一章 反垄断法律制度",
+      "count": 200,
+      "file": "chapter-11.json",
+      "types": {
+        "single": 120,
+        "multiple": 60,
+        "case": 20
+      }
+    },
+    {
+      "id": "12",
+      "title": "第十二章 涉外经济法律制度",
+      "count": 200,
+      "file": "chapter-12.json",
+      "types": {
+        "single": 120,
+        "multiple": 60,
+        "case": 20
+      }
+    }
+  ]
+}
