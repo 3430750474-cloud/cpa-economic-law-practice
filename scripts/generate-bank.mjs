@@ -108,6 +108,20 @@ const wrongRules=[
 const rotate=(arr,n)=>arr.map((_,i)=>arr[(i+n)%arr.length]);
 const stableShuffle=(arr,seed)=>rotate(arr,seed%arr.length);
 
+const authorizedOriginalCase={
+  id:"ch09-c-001",chapterId:"09",type:"case",sourceType:"authorized-original",source:"2022年CPA经济法忆题·授权讲义原题",year:2022,difficulty:"冲刺",tags:["支票","票据追索权"],
+  stem:"2022年CPA经济法综合案例原题：支票与电子银行承兑汇票",
+  material:"A公司向B公司购买货物，总价款为100万元，分两期支付。2022年3月1日，为支付第1笔款项，A公司向B公司签发了一张以甲银行为付款银行的支票，未填写支票金额即交付给B公司，授权B公司提示付款前补记。2022年3月15日，为支付第2笔款项，A公司又在票据业务系统中向B公司签发了一张电子银行承兑汇票，乙银行在系统中作为承兑人记载并签章，汇票到期日为2022年9月14日。B公司收到支票后补记金额，并于2022年4月1日向甲银行提示付款，甲银行以A公司账户余额不足为由拒绝付款。此后，B公司将汇票背书转让给D公司以清偿债务。汇票到期后，乙银行以A公司账户余额不足为由拒绝付款。2022年9月20日，B公司与D公司分别就支票和汇票向A公司追索，A公司拒绝承担责任，并主张B公司在支票上的票据权利已经消灭。",
+  questions:[
+    {prompt:"B公司补记支票金额的行为是否有效？",answer:"有效。支票金额可以由出票人授权的相对人补记；未补记前不得使用该支票。",points:["明确结论为有效","指出金额可授权补记","说明未补记前不得使用"]},
+    {prompt:"甲银行以A公司账户余额不足为由拒绝付款是否成立？",answer:"成立。付款时出票人在付款人处的存款不足以支付支票金额，构成空头支票，付款人应当拒绝付款。",points:["认定构成空头支票","说明付款人可以拒付","结合账户余额不足事实"]},
+    {prompt:"B公司于2022年4月1日提示付款是否逾期？",answer:"是。支票持票人应当自出票日起10日内提示付款，本题支票于3月1日签发，4月1日提示已经超过法定期限。",points:["写出10日提示期限","计算起止时间","得出逾期结论"]},
+    {prompt:"乙银行能否以A公司账户余额不足为由拒绝承担汇票责任？",answer:"不能。付款人承兑汇票后，应当承担到期付款责任和最终追索责任，承兑申请人与承兑人之间的资金关系不能对抗持票人。",points:["指出承兑人到期付款责任","区分票据关系与资金关系","得出乙银行不得拒绝的结论"]}
+  ],
+  explanation:"本题将支票的授权补记、提示付款期限、空头支票与承兑汇票的无因性集中考查。作答时必须区分支票付款人与汇票承兑人的责任基础。",
+  legalBasis:"《票据法》支票授权补记、提示付款期限及汇票承兑责任制度"
+};
+
 function single(ch,idx){
   const t=ch[2][idx%ch[2].length], variant=Math.floor(idx/ch[2].length), subject=names[(idx+variant)%names.length];
   const correct=t[1], opts=stableShuffle([correct,wrongRules[(idx*3)%wrongRules.length],wrongRules[(idx*3+1)%wrongRules.length],wrongRules[(idx*3+2)%wrongRules.length]],idx);
@@ -119,6 +133,7 @@ function multiple(ch,idx){
   return {id:`ch${ch[0]}-m-${String(idx+1).padStart(3,"0")}`,chapterId:ch[0],type:"multiple",sourceType:variant===0?"authorized-adapted":"original",source:variant===0?"2026年CPA经济法授权讲义·考点改编":"原创题",year:2026,difficulty:difficulties[(idx+1)%3],tags:[t[0],t2[0]],stem:`关于${t[0]}与${t2[0]}，下列说法正确的有（ ）。`,options:opts.map((x,i)=>({key:"ABCD"[i],text:x})),answer:opts.map((x,i)=>correct.includes(x)?"ABCD"[i]:null).filter(Boolean),explanation:`本题同时考查${t[0]}和${t2[0]}。正确表述分别为：${correct.join("；")} 错误选项忽略了法定条件或不当扩大了规则效果。`,legalBasis:`${t[2]}；${t2[2]}`};
 }
 function caseItem(ch,idx){
+  if(ch[0]==="09"&&idx===0)return authorizedOriginalCase;
   const t=ch[2][idx%6],t2=ch[2][(idx+2)%6],a=names[idx%names.length],b=names[(idx+3)%names.length],money=50+(idx%8)*25;
   const material=`2026年，${a}在开展${contexts[idx%contexts.length]}时与${b}发生交易，交易金额为${money}万元。双方先通过内部会议形成安排，随后实施了与“${t[0]}”有关的行为，但未完整履行相应的公示、通知或决策程序。交易推进后，第三人主张其不知道双方内部限制，并已支付合理对价。此后，${a}又以“${t2[0]}”规则为由拒绝继续履行，由此产生争议。`;
   const qs=[
