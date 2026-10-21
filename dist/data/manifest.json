@@ -1,138 +1,168 @@
 {
-  "version": "2026.10.21",
-  "total": 2400,
+  "version": "2026.10.21-v2",
+  "total": 5400,
+  "methodology": "按2026年中注协大纲能力等级、授权历年题密度和案例考查频率分配",
   "chapters": [
     {
       "id": "01",
       "title": "第一章 法律基本原理",
-      "count": 200,
+      "count": 220,
       "file": "chapter-01.json",
+      "weight": 0.0407,
       "types": {
-        "single": 120,
-        "multiple": 60,
-        "case": 20
+        "authorizedOriginal": 28,
+        "single": 144,
+        "multiple": 67,
+        "case": 9
       }
     },
     {
       "id": "02",
       "title": "第二章 基本民事法律制度",
-      "count": 200,
+      "count": 420,
       "file": "chapter-02.json",
+      "weight": 0.0778,
       "types": {
-        "single": 120,
-        "multiple": 60,
-        "case": 20
+        "authorizedOriginal": 35,
+        "single": 238,
+        "multiple": 144,
+        "case": 38
       }
     },
     {
       "id": "03",
       "title": "第三章 物权法律制度",
-      "count": 200,
+      "count": 480,
       "file": "chapter-03.json",
+      "weight": 0.0889,
       "types": {
-        "single": 120,
-        "multiple": 60,
-        "case": 20
+        "authorizedOriginal": 36,
+        "single": 276,
+        "multiple": 156,
+        "case": 48
       }
     },
     {
       "id": "04",
       "title": "第四章 合同法律制度",
-      "count": 200,
+      "count": 720,
       "file": "chapter-04.json",
+      "weight": 0.1333,
       "types": {
-        "single": 120,
-        "multiple": 60,
-        "case": 20
+        "authorizedOriginal": 52,
+        "single": 396,
+        "multiple": 223,
+        "case": 101
       }
     },
     {
       "id": "05",
       "title": "第五章 合伙企业法律制度",
-      "count": 200,
+      "count": 360,
       "file": "chapter-05.json",
+      "weight": 0.0667,
       "types": {
-        "single": 120,
-        "multiple": 60,
-        "case": 20
+        "authorizedOriginal": 59,
+        "single": 215,
+        "multiple": 120,
+        "case": 25
       }
     },
     {
       "id": "06",
       "title": "第六章 公司法律制度",
-      "count": 200,
+      "count": 720,
       "file": "chapter-06.json",
+      "weight": 0.1333,
       "types": {
-        "single": 120,
-        "multiple": 60,
-        "case": 20
+        "authorizedOriginal": 64,
+        "single": 398,
+        "multiple": 221,
+        "case": 101
       }
     },
     {
       "id": "07",
       "title": "第七章 证券法律制度",
-      "count": 200,
+      "count": 720,
       "file": "chapter-07.json",
+      "weight": 0.1333,
       "types": {
-        "single": 120,
-        "multiple": 60,
-        "case": 20
+        "authorizedOriginal": 71,
+        "single": 390,
+        "multiple": 229,
+        "case": 101
       }
     },
     {
       "id": "08",
       "title": "第八章 企业破产法律制度",
-      "count": 200,
+      "count": 520,
       "file": "chapter-08.json",
+      "weight": 0.0963,
       "types": {
-        "single": 120,
-        "multiple": 60,
-        "case": 20
+        "authorizedOriginal": 17,
+        "single": 293,
+        "multiple": 165,
+        "case": 62
       }
     },
     {
       "id": "09",
       "title": "第九章 票据与支付结算法律制度",
-      "count": 200,
+      "count": 520,
       "file": "chapter-09.json",
+      "weight": 0.0963,
       "types": {
-        "single": 120,
-        "multiple": 60,
-        "case": 20
+        "authorizedOriginal": 26,
+        "single": 291,
+        "multiple": 167,
+        "case": 62
       }
     },
     {
       "id": "10",
       "title": "第十章 企业国有资产法律制度",
-      "count": 200,
+      "count": 240,
       "file": "chapter-10.json",
+      "weight": 0.0444,
       "types": {
-        "single": 120,
-        "multiple": 60,
-        "case": 20
+        "authorizedOriginal": 25,
+        "single": 142,
+        "multiple": 86,
+        "case": 12
       }
     },
     {
       "id": "11",
       "title": "第十一章 反垄断法律制度",
-      "count": 200,
+      "count": 300,
       "file": "chapter-11.json",
+      "weight": 0.0556,
       "types": {
-        "single": 120,
-        "multiple": 60,
-        "case": 20
+        "authorizedOriginal": 49,
+        "single": 171,
+        "multiple": 108,
+        "case": 21
       }
     },
     {
       "id": "12",
       "title": "第十二章 涉外经济法律制度",
-      "count": 200,
+      "count": 180,
       "file": "chapter-12.json",
+      "weight": 0.0333,
       "types": {
-        "single": 120,
-        "multiple": 60,
-        "case": 20
+        "authorizedOriginal": 44,
+        "single": 107,
+        "multiple": 65,
+        "case": 8
       }
     }
-  ]
+  ],
+  "quality": {
+    "authorizedOriginals": 506,
+    "maxExactOptionReuse": 12,
+    "uniqueGeneratedOptionTexts": 7253
+  }
 }

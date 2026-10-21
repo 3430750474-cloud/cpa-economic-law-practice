@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/generate-bank.mjs",
+    "extract": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/extract-authorized-questions.ps1",
+    "build": "node scripts/generate-bank-v2.mjs",
     "validate": "node scripts/validate-bank.mjs"
   }
 }
