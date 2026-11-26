@@ -1,4 +1,4 @@
-import { showMaterial } from "./material-search.js?v=20261126-2";
+import { showMaterial } from "./material-search.js?v=20261126-3";
 const main=document.querySelector("#main"),toast=document.querySelector("#toast");
 const STORE="zhifa-cpa-economic-law-v2";
 let activeIds=new Set();
